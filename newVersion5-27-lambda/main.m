@@ -113,8 +113,8 @@ full_reward_MMF={};
 global fileID
     fileID=fopen('log.txt','w');  
     
-for i=1:9
-    lambda1=1+i;
+for i=1:1
+    lambda1=11;
     fprintf("the %d time\n",i);
          
     fprintf(fileID,"the %d time\n",i);

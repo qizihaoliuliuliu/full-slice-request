@@ -58,9 +58,9 @@ p1.Marker='o';
 %title('the iteration of value state')
 xlabel('the number of iterations')
 ylabel('value of state')
-saveas(gcf,"./Figure3-5-state2/State2-iterationOfValueState.fig");
-saveas(gcf,"./Figure3-5-state2/State2-iterationOfValueState.eps" );
-saveas(gcf,"./Figure3-5-state2/State2-iterationOfValueState.png");
+saveas(gca,"./Figure-state2/State2-iterationOfValueState.fig");
+saveas(gca,"./Figure-state2/State2-iterationOfValueState.eps",'epsc' );
+saveas(gca,"./Figure-state2/State2-iterationOfValueState.png");
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %figure 2
@@ -110,9 +110,9 @@ ylabel('price')
 legend('networking','storage','computing','Location','southeast')
 set(gca,'fontname','times') 
 set(gca,'fontsize',16')
-saveas(gcf,"./Figure3-5-state2/State2-iterationOfPrice.fig");
-saveas(gcf,"./Figure3-5-state2/State2-iterationOfPrice.eps" );
-saveas(gcf,"./Figure3-5-state2/State2-iterationOfPrice.png");
+saveas(gca,"./Figure-state2/State2-iterationOfPrice.fig");
+saveas(gca,"./Figure-state2/State2-iterationOfPrice.eps" ,'epsc');
+saveas(gca,"./Figure-state2/State2-iterationOfPrice.png");
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %figure 3
@@ -152,9 +152,9 @@ ylabel('$x_{i,j,z}(t)$','Interpreter','LaTex')
 set(gca,'fontname','times') 
 set(gca,'fontsize',16')
 legend('networking','storage','computing','Location','northeast')
-saveas(gcf,"./Figure3-5-state2/State2-iterationOfX.fig");
-saveas(gcf,"./Figure3-5-state2/State2-iterationOfX.eps" );
-saveas(gcf,"./Figure3-5-state2/State2-iterationOfX.png");
+saveas(gca,"./Figure-state2/State2-iterationOfX.fig");
+saveas(gca,"./Figure-state2/State2-iterationOfX.eps",'epsc' );
+saveas(gca,"./Figure-state2/State2-iterationOfX.png");
 
 
 %figure 4
@@ -176,9 +176,9 @@ set(gca,'yticklabel',{'1','  ','  ','  ','5',' ','  ','  ','  ','10'});
 
 set(gca,'fontname','times') 
 set(gca,'fontsize',16')
-saveas(gcf,"./Figure3-5-state2/State2-reward_of_optimal.fig");
-saveas(gcf,"./Figure3-5-state2/State2-reward_of_optimal.eps" );
-saveas(gcf,"./Figure3-5-state2/State2-reward_of_optimal.png");
+saveas(gca,"./Figure-state2/State2-reward_of_optimal.fig");
+saveas(gca,"./Figure-state2/State2-reward_of_optimal.eps",'epsc' );
+saveas(gca,"./Figure-state2/State2-reward_of_optimal.png");
 
 %figure 5
 %the percentage of allocate request
@@ -246,9 +246,9 @@ ylabel('admissible ratio')
 legend({'OAR','Greedy','MMF'},'location','southwest')
 set(gca,'fontname','times') 
 set(gca,'fontsize',16')
-saveas(gcf,"./Figure3-5-state2/State2-allocatedPercentage.fig");
-saveas(gcf,"./Figure3-5-state2/State2-allocatedPercentage.eps" );
-saveas(gcf,"./Figure3-5-state2/State2-allocatedPercentage.png");
+saveas(gca,"./Figure-state2/State2-allocatedPercentage.fig");
+saveas(gca,"./Figure-state2/State2-allocatedPercentage.eps",'epsc' );
+saveas(gca,"./Figure-state2/State2-allocatedPercentage.png");
 
 figure(6)
 
@@ -292,9 +292,9 @@ barNumber=[];
 % ylabel('reward')
 % legend('optimal','Greedy','MMF')
 %grid on
-saveas(gcf,"./Figure3-5-state2/State2-RewardCompare.fig");
-saveas(gcf,"./Figure3-5-state2/State2-RewardCompare.eps" );
-saveas(gcf,"./Figure3-5-state2/State2-RewardCompare.png");
+saveas(gca,"./Figure-state2/State2-RewardCompare.fig");
+saveas(gca,"./Figure-state2/State2-RewardCompare.eps" ,'epsc');
+saveas(gca,"./Figure-state2/State2-RewardCompare.png");
 
 
 
@@ -341,8 +341,8 @@ barNumber=[];
 % ylabel('reward')
 % legend('optimal','Greedy','MMF')
 %grid on
-saveas(gcf,"./Figure3-5-state2/State2-RewardCompare_resource.fig");
-saveas(gcf,"./Figure3-5-state2/State2-RewardCompare_resource.eps" );
-saveas(gcf,"./Figure3-5-state2/State2-RewardCompare_resource.png");
+saveas(gca,"./Figure-state2/State2-RewardCompare_resource.fig");
+saveas(gca,"./Figure-state2/State2-RewardCompare_resource.eps",'epsc' );
+saveas(gca,"./Figure-state2/State2-RewardCompare_resource.png");
 
 end

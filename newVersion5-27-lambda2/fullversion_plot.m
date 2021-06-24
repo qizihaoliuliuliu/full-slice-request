@@ -43,10 +43,10 @@ ylabel('reward')
 legend({'OAR','Greedy','MMF'},'location','northeast')
 set(gca,'fontname','times') 
 set(gca,'fontsize',16')
-axis([2,10,0 200])
-saveas(gcf,"./FullFigure/Full_mu.fig");
-saveas(gcf,"./FullFigure/Full_mu.eps" );
-saveas(gcf,"./FullFigure/Full_mu.png");
+axis([2,20,0 200])
+saveas(gca,"./FullFigure/Full_mu.fig");
+saveas(gca,"./FullFigure/Full_mu.eps",'epsc' );
+saveas(gca,"./FullFigure/Full_mu.png");
 fprintf("love");
 end
 

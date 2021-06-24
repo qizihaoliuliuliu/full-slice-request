@@ -44,9 +44,9 @@ legend({'OAR','Greedy','MMF'},'location','northwest')
 set(gca,'fontname','times') 
 axis([2,10,0 200])
 set(gca,'fontsize',16')
-saveas(gcf,"./FullFigure/Full_lambda.fig");
-saveas(gcf,"./FullFigure/Full_lambda.eps" );
-saveas(gcf,"./FullFigure/Full_lambda.png");
+saveas(gca,"./FullFigure/Full_lambda.fig");
+saveas(gca,"./FullFigure/Full_lambda.eps",'epsc' );
+saveas(gca,"./FullFigure/Full_lambda.png");
 fprintf("love");
 end
 

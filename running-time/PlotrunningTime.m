@@ -7,6 +7,6 @@ xlabel("Max number of slice requests")
 ylabel("Rnning time in second")
 set(gca,'fontname','times') 
 set(gca,'fontsize',16')
-saveas(gcf,"./FullFigure/RunningTime.fig");
-saveas(gcf,"./FullFigure/RunningTime.eps" );
-saveas(gcf,"./FullFigure/RunningTime.png");
+saveas(gca,"./FullFigure/RunningTime.fig");
+saveas(gca,"./FullFigure/RunningTime.eps",'epsc' );
+saveas(gca,"./FullFigure/RunningTime.png");

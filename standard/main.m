@@ -115,6 +115,7 @@ global fileID
     fileID=fopen('log.txt','w');  
     
 for i=1:1
+    
     %utility_factor=3+0.1*i;
     fprintf("the %d time\n",i);
          
