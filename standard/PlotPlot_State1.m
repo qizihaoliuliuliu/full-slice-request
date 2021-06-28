@@ -38,23 +38,32 @@ load singleData/reward_MMF.mat;
 load singleData/State_Space;
 state=State_Space{1,6};
 [temp,value_state_iteration_times]=size(Value_State_record);
-value_iteration_special_state=[];
+value_iteration_special_state1=[];
 for i =1:value_state_iteration_times
-    value_iteration_special_state=[value_iteration_special_state,Value_State_record{i}(1,6)];
+    value_iteration_special_state1=[value_iteration_special_state1,Value_State_record{i}(1,6)];
 end
+value_iteration_special_state2=[]
+state=State_Space{13,6};
+for i =1:value_state_iteration_times
+    value_iteration_special_state2=[value_iteration_special_state2,Value_State_record{i}(13,6)];
+end
+
+
 
 iteration_times=[];
 
-for i=1:length(value_iteration_special_state)
+for i=1:length(value_iteration_special_state1)
     iteration_times=[iteration_times,i];
 end
 
 figure(1)
-p1=plot(iteration_times,value_iteration_special_state);
+p1=plot(iteration_times,value_iteration_special_state1,iteration_times,value_iteration_special_state2);
 %axis([1,30,0 800])
 set(gca,'fontname','times') 
 set(gca,'fontsize',16)
-p1.Marker='o';
+p1(1).Marker='o';
+p1(2).Marker='s';
+legend('state1','state2','Location','southeast')
 %title('the iteration of value state')
 xlabel('the number of iterations')
 ylabel('value of state')
